@@ -1,0 +1,18 @@
+<div data-options="dxView : { name: 'home', title: 'Home' } ">
+    <div class="home-view" data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div class="dx-fieldset settings-form">
+            <div class="dx-field">
+                <div class="dx-field-label">Category</div>
+                <div class="dx-field-value">
+                    <div data-bind="dxLookup: { dataSource: categoryDataSource, displayExpr: 'CategoryName', valueExpr: 'CategoryID', value: categoryValue, onValueChanged: onCategoryChange }"></div>
+                </div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-label">Product</div>
+                <div class="dx-field-value">
+                    <div data-bind="dxLookup: { dataSource: productDataSource, displayExpr: 'ProductName', valueExpr: 'ProductID', value: productValue }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
