@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="https://cdn3.devexpress.com/jslib/19.2.6/js/dx.all.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.6/css/dx.common.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.6/css/dx.light.css" />
+	<script>
+		$(function(){
+			$("#stateSelectBox").dxSelectBox({
+					dataSource: states,
+				  valueExpr: "ID",
+					displayExpr: "Name",
+					showClearButton: true,
+					onValueChanged: function(e) {
+						let dataSource = citySelectBox.getDataSource();
+						dataSource.filter("StateID", "=", e.value);
+						dataSource.reload();
+						citySelectBox.option("value", null);
+					}
+			});
+			
+			let citySelectBox = $("#citySelectBox").dxSelectBox({
+					dataSource: cities,
+					valueExpr: "ID",
+					displayExpr: "Name"
+			}).dxSelectBox("instance");
+
+			$("#stateCityForm").dxForm({
+				formData: address,
+				onFieldDataChanged: function(e) {
+					if(e.dataField === "StateID") {
+						let cityEditor = e.component.getEditor("CityID");
+						cityEditor.getDataSource().filter(['StateID', '=', e.value]);  
+						cityEditor.getDataSource().reload();
+						e.component.updateData("CityID", null);
+					}
+				},
+				items:[
+					// State item
+					{
+						label: { text: "State" },
+						dataField: "StateID",
+						editorType: "dxSelectBox",
+						editorOptions: {
+							dataSource: states,
+							valueExpr: "ID",
+							displayExpr: "Name",
+							showClearButton: true
+						}
+					},
+					// City item
+					{
+						label: { text: "City" },
+						dataField: "CityID",
+						editorType: "dxSelectBox",
+						editorOptions: {
+							dataSource: cities,
+							valueExpr: "ID",
+							displayExpr: "Name"
+						}
+					}
+				]
+			});
+		
+		});
+
+		var address = { StateID: null, CityID: null }
+
+		var states = [{
+			"ID": 1,
+			"Name": "Alabama"
+		}, {
+			"ID": 2,
+			"Name": "Alaska"
+		}, {
+			"ID": 3,
+			"Name": "Arizona"
+		}, {
+			"ID": 4,
+			"Name": "Arkansas"
+		}, {
+			"ID": 5,
+			"Name": "California"
+		}];
+
+		var cities = [{
+			"ID": 1,
+			"Name": "Tuscaloosa",
+			"StateID": 1
+		}, {
+			"ID": 2,
+			"Name": "Hoover",
+			"StateID": 1
+		}, {
+			"ID": 3,
+			"Name": "Dothan",
+			"StateID": 1
+		}, {
+			"ID": 4,
+			"Name": "Decatur",
+			"StateID": 1
+		}, {
+			"ID": 5,
+			"Name": "Anchorage",
+			"StateID": 2
+		}, {
+			"ID": 6,
+			"Name": "Fairbanks",
+			"StateID": 2
+		}, {
+			"ID": 7,
+			"Name": "Juneau",
+			"StateID": 2
+		}, {
+			"ID": 8,
+			"Name": "Avondale",
+			"StateID": 3
+		}, {
+			"ID": 9,
+			"Name": "Buckeye",
+			"StateID": 3
+		}, {
+			"ID": 10,
+			"Name": "Carefree",
+			"StateID": 3
+		}, {
+			"ID": 11,
+			"Name": "Springdale",
+			"StateID": 4
+		}, {
+			"ID": 12,
+			"Name": "Rogers",
+			"StateID": 4
+		}, {
+			"ID": 13,
+			"Name": "Sherwood",
+			"StateID": 4
+		}, {
+			"ID": 14,
+			"Name": "Jacksonville",
+			"StateID": 4
+		}, {
+			"ID": 15,
+			"Name": "Cabot",
+			"StateID": 4
+		}, {
+			"ID": 16,
+			"Name": "Adelanto",
+			"StateID": 5
+		}, {
+			"ID": 17,
+			"Name": "Glendale",
+			"StateID": 5
+		}, {
+			"ID": 18,
+			"Name": "Moorpark",
+			"StateID": 5
+		}, {
+			"ID": 19,
+			"Name": "Needles",
+			"StateID": 5
+		}, {
+			"ID": 20,
+			"Name": "Ontario",
+			"StateID": 5
+		}];
+	</script>
+</head>
+
+<body>
+	
+    <div class="dx-viewport demo-container">
+			<div class="dx-fieldset" style="width:50%"> 
+				<div class="dx-fieldset-header">Standalone editors</div>
+				<div class="dx-field"> 
+					<div class="dx-field-label">State</div>
+					<div class="dx-field-value"> 
+						<div id="stateSelectBox"></div>
+					</div>
+				</div>
+				<div class="dx-field"> 
+					<div class="dx-field-label">City</div>
+					<div class="dx-field-value"> 
+						<div id="citySelectBox"></div>
+					</div>
+				</div>
+				<div class="dx-fieldset-header">In Form</div>
+				<div class="dx-field"> 
+					<div id="stateCityForm"></div>
+				</div>
+			</div>
+    </div>
+
+</body>
+
+</html>

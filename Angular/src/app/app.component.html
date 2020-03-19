@@ -1,0 +1,55 @@
+<div class="dx-fieldset" style="width:50%">
+  <div class="dx-fieldset-header">Standalone editors</div>
+  <div class="dx-field">
+    <div class="dx-field-label">State</div>
+    <div class="dx-field-value">
+      <dx-select-box
+        [dataSource]="states"
+        displayExpr="Name"
+        valueExpr="ID"
+        (onValueChanged)="onStateChanged($event)"
+        [showClearButton]="true"
+      ></dx-select-box>
+    </div>
+  </div>
+  <div class="dx-field">
+    <div class="dx-field-label">City</div>
+    <div class="dx-field-value">
+      <dx-select-box
+        #citySelectBox
+        displayExpr="Name"
+        valueExpr="ID"
+        [dataSource]="cities"
+      ></dx-select-box>
+    </div>
+  </div>
+  <div class="dx-fieldset-header">In Form</div>
+  <div class="dx-field">
+    <dx-form
+      [formData]="address"
+      (onFieldDataChanged)="onFieldDataChanged($event)"
+    >
+      <dxi-item
+        dataField="StateID"
+        [label]="{ text: 'State' }"
+        editorType="dxSelectBox"
+        [editorOptions]='{ 
+          dataSource: states,
+          valueExpr: "ID",
+          displayExpr: "Name",
+          showClearButton: true }'
+      >
+      </dxi-item>
+      <dxi-item
+        dataField="CityID"
+        [label]="{ text: 'City' }"
+        editorType="dxSelectBox"
+        [editorOptions]='{ 
+          dataSource: cities,
+          valueExpr: "ID",
+          displayExpr: "Name" }'
+      >
+      </dxi-item>
+    </dx-form>
+  </div>
+</div>
