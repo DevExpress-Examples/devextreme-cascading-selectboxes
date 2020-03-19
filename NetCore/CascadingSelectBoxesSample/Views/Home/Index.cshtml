@@ -11,8 +11,9 @@
     function onFieldDataChanged(e) {
         if (e.dataField === "StateID") {
             let cityEditor = e.component.getEditor("CityID");
-            cityEditor.getDataSource().filter(['StateID', '=', e.value]);
-            cityEditor.getDataSource().load();
+            let dataSource = cityEditor.getDataSource();
+            dataSource.filter(["StateID", "=", e.value]);
+            dataSource.load();
             e.component.updateData("CityID", null);
         }
     }
