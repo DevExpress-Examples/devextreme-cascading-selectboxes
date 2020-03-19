@@ -29,15 +29,16 @@ export class AppComponent {
   onStateChanged(e) {
     let dataSource = this.citySelectBoxComponent.instance.getDataSource();
     dataSource.filter(["StateID", "=", e.value]);
-    dataSource.reload();
+    dataSource.load();
     this.citySelectBoxComponent.instance.option("value", null);
   }
 
   onFieldDataChanged(e) {
     if (e.dataField === "StateID") {
       var cityEditor = e.component.getEditor("CityID");
-      cityEditor.getDataSource().filter(["StateID", "=", e.value]);
-      cityEditor.getDataSource().reload();
+      let dataSource = cityEditor.getDataSource();
+      dataSource.filter(["StateID", "=", e.value]);
+      dataSource.load();
       e.component.updateData("CityID", null);
     }
   }
