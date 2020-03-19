@@ -2,8 +2,8 @@
 
 Take a look at the following files of this example to see the required code: 
 
-- [app.component.html]()
-- [app.component.ts]()
+- [app.component.html](https://github.com/DevExpress-Examples/how-to-implement-cascading-lookups-e5000/blob/0546caf0a9075d69804c2c57acf6e3d233606b28/Angular/src/app/app.component.html#L1)
+- [app.component.ts](https://github.com/DevExpress-Examples/how-to-implement-cascading-lookups-e5000/blob/0546caf0a9075d69804c2c57acf6e3d233606b28/Angular/src/app/app.component.ts#L1)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
