@@ -1,4 +1,4 @@
-# How to implement cascading select boxes
+# How to implement standalone and in-Form cascading SelectBoxes
 
 This example demonstrates how to implement cascading select boxes in the following scenarios:
 - Standalone SelectBoxes
