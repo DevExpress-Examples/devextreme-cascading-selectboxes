@@ -31,7 +31,6 @@
     >
       <dxi-item
         dataField="StateID"
-        [label]="{ text: 'State' }"
         editorType="dxSelectBox"
         [editorOptions]='{ 
           dataSource: states,
@@ -39,16 +38,17 @@
           displayExpr: "Name",
           showClearButton: true }'
       >
+        <dxo-label text="State"></dxo-label>
       </dxi-item>
       <dxi-item
         dataField="CityID"
-        [label]="{ text: 'City' }"
         editorType="dxSelectBox"
         [editorOptions]='{ 
           dataSource: cities,
           valueExpr: "ID",
           displayExpr: "Name" }'
       >
+        <dxo-label text="City"></dxo-label>
       </dxi-item>
     </dx-form>
   </div>
