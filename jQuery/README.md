@@ -1,6 +1,6 @@
 # jQuery
 
-Take a look at the index.htm file containing the HTML markup and JavaScript code. Open it in a web browser to run the example.
+Take a look at the index.html file containing the HTML markup and JavaScript code. Open it in a web browser to run the example.
 
 ## Further help
 
