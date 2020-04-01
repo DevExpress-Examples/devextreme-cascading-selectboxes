@@ -16,7 +16,7 @@
 					onValueChanged: function(e) {
 						let dataSource = citySelectBox.getDataSource();
 						dataSource.filter("StateID", "=", e.value);
-						dataSource.reload();
+						dataSource.load();
 						citySelectBox.option("value", null);
 					}
 			});
@@ -33,7 +33,7 @@
 					if(e.dataField === "StateID") {
 						let cityEditor = e.component.getEditor("CityID");
 						cityEditor.getDataSource().filter(['StateID', '=', e.value]);  
-						cityEditor.getDataSource().reload();
+						cityEditor.getDataSource().load();
 						e.component.updateData("CityID", null);
 					}
 				},
