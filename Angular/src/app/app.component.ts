@@ -17,6 +17,7 @@ export class AppComponent {
   states: State[];
   cities: City[];
 
+  selectedCityID: number;
   address: Address;
 
   constructor(service: Service) {
@@ -30,7 +31,7 @@ export class AppComponent {
     let dataSource = this.citySelectBoxComponent.instance.getDataSource();
     dataSource.filter(["StateID", "=", e.value]);
     dataSource.load();
-    this.citySelectBoxComponent.instance.option("value", null);
+	this.selectedCityID = null;
   }
 
   onFieldDataChanged(e) {
@@ -39,7 +40,7 @@ export class AppComponent {
       let dataSource = cityEditor.getDataSource();
       dataSource.filter(["StateID", "=", e.value]);
       dataSource.load();
-      e.component.updateData("CityID", null);
+	  this.address.CityID = null;
     }
   }
 }

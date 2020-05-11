@@ -19,6 +19,7 @@
         #citySelectBox
         displayExpr="Name"
         valueExpr="ID"
+		[(value)]="selectedCityID"
         [dataSource]="cities"
       ></dx-select-box>
     </div>
@@ -26,7 +27,7 @@
   <div class="dx-fieldset-header">In Form</div>
   <div class="dx-field">
     <dx-form
-      [formData]="address"
+      [(formData)]="address"
       (onFieldDataChanged)="onFieldDataChanged($event)"
     >
       <dxi-item
