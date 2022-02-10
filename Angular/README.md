@@ -1,6 +1,6 @@
 # Angular
 
-Take a look at the following files of this example to see the required code: 
+Take a look at the following files to see the code of this example: 
 
 - [app.component.html](Angular/src/app/app.component.html)
 - [app.component.ts](Angular/src/app/app.component.ts)

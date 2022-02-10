@@ -1,6 +1,6 @@
 # Vue
 
-Take a look at the following files of this example to see the required code:
+Take a look at the following file to see the code of this example: 
 
 - [App.vue](Vue/src/App.vue)
 
