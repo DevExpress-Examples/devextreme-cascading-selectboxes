@@ -8,14 +8,14 @@
 
 This example demonstrates how to implement cascading SelectBoxes in the following scenarios:
 
-- standalone SelectBoxes
+- Ыtandalone SelectBoxes
 - SelectBoxes in Form
 
-When you select a value from the first SelectBox, the values from the second SelectBox should be filtered. In this example, when you select a state only the cities from this state appear in the second SelectBox.
+When you select a value from the first SelectBox, the second SelectBoxloads the filtered values. In this example, when you select a state only the cities from this state appear in the second SelectBox.
 
 ![Implement standalone and in-Form cascading SelectBoxes](devextreme-cascading-selectboxes.png)
 
-To implement this, get a changed [value](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#value) from the first editor and [filter](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filter) the [dataSource](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#dataSource) by this **value** in the second editor so it shows relevant items.
+To implement this, get a [value](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#value) from the first editor and [filter](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filter) the [dataSource](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#dataSource) by this **value** in the second editor so it shows relevant items.
 
 ## Files to Look At
 
