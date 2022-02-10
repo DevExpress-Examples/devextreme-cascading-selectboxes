@@ -2,7 +2,7 @@
 
 Take a look at the following files of this example to see the required code: 
 
-- [Index.shtml](NetCore/CascadingSelectBoxesSample/Views/Home/Index.cshtml)
+- [Index.cshtml](NetCore/CascadingSelectBoxesSample/Views/Home/Index.cshtml)
 
 
 This project is created using [DevExtreme Project Templates](https://docs.devexpress.com/AspNetCore/401026/devextreme-based-controls/get-started/configure-a-visual-studio-project#create-a-new-project-from-templates).

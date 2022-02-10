@@ -29,7 +29,7 @@ To implement this, get a changed [value](https://js.devexpress.com/Documentation
 - **React**
     - [App.js](React/src/App.js)
 - **NetCore**    
-    - [Index.shtml](NetCore/CascadingSelectBoxesSample/Views/Home/Index.cshtml)
+    - [Index.cshtml](NetCore/CascadingSelectBoxesSample/Views/Home/Index.cshtml)
 
 ## Documentation
 
