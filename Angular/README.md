@@ -2,10 +2,9 @@
 
 Take a look at the following files of this example to see the required code: 
 
-- [app.component.html](https://github.com/frostehhh/DataGrid---How-to-implement-cascading-dropdownboxes/blob/20.1.6%2B/Angular/src/app/app.component.html)
-- [app.component.ts](https://github.com/frostehhh/DataGrid---How-to-implement-cascading-dropdownboxes/blob/20.1.6%2B/Angular/src/app/app.component.ts)
+- [app.component.html](Angular/src/app/app.component.html)
+- [app.component.ts](Angular/src/app/app.component.ts)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
 ## Development server
