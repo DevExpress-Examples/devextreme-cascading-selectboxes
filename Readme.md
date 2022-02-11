@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# SelectBoxes for DevExtreme - How to implement standalone and in-Form cascading SelectBoxes
+# SelectBoxes for DevExtreme - How to implement standalone and in-form cascading SelectBoxes
 
 This example demonstrates how to implement cascading SelectBoxes in the following scenarios:
 
