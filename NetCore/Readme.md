@@ -1,6 +1,6 @@
 # ASP.NET Core 
 
-Take a look at the following files of this example to see the required code: 
+The following files contain the code of this example: 
 
 - [Index.cshtml](NetCore/CascadingSelectBoxesSample/Views/Home/Index.cshtml)
 

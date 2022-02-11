@@ -11,7 +11,7 @@ This example demonstrates how to implement cascading SelectBoxes in the followin
 - Standalone SelectBoxes
 - SelectBoxes in Form
 
-When you select a value from the first SelectBox, the second SelectBox loads the filtered values. In this example, only the cities from the selected state appear in the second SelectBox.
+When you select a value from the first SelectBox, the second SelectBox loads the filtered values. In this example, only cities from the selected state appear in the second SelectBox.
 
 ![Implement standalone and in-Form cascading SelectBoxes](devextreme-cascading-selectboxes.png)
 
