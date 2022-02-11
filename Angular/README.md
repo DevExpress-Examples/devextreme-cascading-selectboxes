@@ -1,6 +1,7 @@
 # Angular
 
-Take a look at the following files to see the code of this example: 
+The following files contain the code of this example: 
+
 
 - [app.component.html](Angular/src/app/app.component.html)
 - [app.component.ts](Angular/src/app/app.component.ts)
