@@ -1,8 +1,8 @@
 # React
 
-Take a look at the following files of this example to see the required code: 
+The following file contains the code of this example:
 
-Your files go here
+- [App.js](React/src/App.js)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
