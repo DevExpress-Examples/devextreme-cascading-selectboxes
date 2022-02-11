@@ -8,7 +8,7 @@
 
 This example demonstrates how to implement cascading SelectBoxes in the following scenarios:
 
-- Ыtandalone SelectBoxes
+- Standalone SelectBoxes
 - SelectBoxes in Form
 
 When you select a value from the first SelectBox, the second SelectBox loads the filtered values. In this example, only the cities from the selected state appear in the second SelectBox.
