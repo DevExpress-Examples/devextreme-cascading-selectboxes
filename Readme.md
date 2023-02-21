@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# SelectBoxes for DevExtreme - How to implement standalone and in-form cascading SelectBoxes
+# DevExtreme SelectBoxes - How to implement standalone and in-form cascading SelectBoxes
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e5000/)**
 <!-- run online end -->
@@ -16,11 +16,11 @@ This example demonstrates how to implement cascading SelectBoxes in the followin
 
 When you select a value from the first SelectBox, the second SelectBox loads the filtered values. In this example, only cities from the selected state appear in the second SelectBox.
 
-![Implement standalone and in-Form cascading SelectBoxes](devextreme-cascading-selectboxes.png)
+<div align="center"><img alt="Implement standalone and in-Form cascading SelectBoxes" src="devextreme-cascading-selectboxes.png" /></div>
 
 To implement this functionality, get the [value](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#value) from the first editor and [filter](https://js.devexpress.com/Documentation/ApiReference/Data_Layer/DataSource/Methods/#filter) the [dataSource](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxSelectBox/Configuration/#dataSource) by this **value** in the second editor.
 
-## Files to Look At
+## Files to Review
 
 - **jQuery**
     - [index.html](jQuery/index.html)
