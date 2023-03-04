@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# DevExtreme SelectBoxes - How to implement standalone and in-form cascading SelectBoxes
+# SelectBox for DevExtreme - How to implement standalone and in-form cascading SelectBoxes
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/128585042/)**
 <!-- run online end -->
