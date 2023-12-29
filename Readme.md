@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # SelectBox for DevExtreme - How to implement standalone and in-form cascading SelectBoxes
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128585042/)**
-<!-- run online end -->
 
 This example demonstrates how to implement cascading SelectBoxes in the following scenarios:
 
