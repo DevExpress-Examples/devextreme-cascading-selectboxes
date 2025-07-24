@@ -6,16 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../node_modules/devextreme-dist/css/dx.material.blue.light.compact.css" />
+    <link rel="stylesheet" type="text/css" href="../node_modules/devextreme-dist/css/dx.light.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="../node_modules/devextreme-dist/js/dx.all.js"></script>
+    <script type="text/javascript" src="data.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </head>
 
   <body class="dx-viewport">
     <div class="demo-container">
-      <div id="btn"></div>
+      <div class="dx-fieldset" style="width: 50%">
+        <div class="dx-fieldset-header">Standalone editors</div>
+        <div class="dx-field">
+          <div class="dx-field-label">State</div>
+          <div class="dx-field-value">
+            <div id="stateSelectBox"></div>
+          </div>
+        </div>
+        <div class="dx-field">
+          <div class="dx-field-label">City</div>
+          <div class="dx-field-value">
+            <div id="citySelectBox"></div>
+          </div>
+        </div>
+        <div class="dx-fieldset-header">In Form</div>
+        <div class="dx-field">
+          <div id="stateCityForm"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
