@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CascadingSelectBoxesSample.Models
+namespace ASP_NET_Core.Models
 {
     public class Address
     {

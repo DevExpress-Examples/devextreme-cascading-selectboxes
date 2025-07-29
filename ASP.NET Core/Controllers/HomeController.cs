@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CascadingSelectBoxesSample.Controllers
+namespace ASP_NET_Core.Controllers
 {
     public class HomeController : Controller
     {
@@ -13,5 +13,9 @@ namespace CascadingSelectBoxesSample.Controllers
             return View();
         }
 
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error() {
+            return View();
+        }
     }
 }

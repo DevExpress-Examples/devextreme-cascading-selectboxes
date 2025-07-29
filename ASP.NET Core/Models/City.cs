@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CascadingSelectBoxesSample.Models {
+namespace ASP_NET_Core.Models {
     public class City
     {
         public int ID { get; set; }
         public int StateID { get; set; }
         public string Name { get; set; }
 
-        public static City[] Cities = new City[] {
+        public static City[] Cities = [
             new City() {
                 ID = 1,
                 Name = "Tuscaloosa",
@@ -93,6 +93,6 @@ namespace CascadingSelectBoxesSample.Models {
                 Name = "Ontario",
                 StateID = 5
             }
-        };
+        ];
     }
 }
