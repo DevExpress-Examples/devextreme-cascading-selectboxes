@@ -20,16 +20,16 @@ To implement this functionality, get the [value](https://js.devexpress.com/Docum
 ## Files to Review
 
 - **jQuery**
-    - [index.html](jQuery/index.html)
+    - [index.html](jQuery/src/index.html)
 - **Angular**
     - [app.component.html](Angular/src/app/app.component.html)
     - [app.component.ts](Angular/src/app/app.component.ts)
 - **Vue**
-    - [App.vue](Vue/src/App.vue)
+    - [Home.vue](Vue/src/components/HomeContent.vue)
 - **React**
-    - [App.js](React/src/App.js)
-- **NetCore**    
-    - [Index.cshtml](NetCore/CascadingSelectBoxesSample/Views/Home/Index.cshtml)
+    - [App.tsx](React/src/App.tsx)
+- **ASP.NET Core**    
+    - [Index.cshtml](ASP.NET%20Core/Views/Home/Index.cshtml)
 
 ## Documentation
 
