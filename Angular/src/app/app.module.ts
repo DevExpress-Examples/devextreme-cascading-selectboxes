@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { DxButtonModule } from 'devextreme-angular/ui/button';
+import { DxSelectBoxModule } from 'devextreme-angular/ui/select-box';
+import { DxFormModule } from 'devextreme-angular/ui/form';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -10,8 +11,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    DxFormModule,
     AppRoutingModule,
-    DxButtonModule,
+    DxSelectBoxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
