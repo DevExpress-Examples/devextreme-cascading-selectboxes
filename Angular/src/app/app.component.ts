@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { DxSelectBoxComponent, DxSelectBoxTypes } from 'devextreme-angular/ui/select-box';
-import { DxFormTypes } from 'devextreme-angular/ui/form';
+import { DxSelectBoxModule, DxSelectBoxComponent, DxSelectBoxTypes } from 'devextreme-angular/ui/select-box';
+import { DxFormModule, DxFormTypes } from 'devextreme-angular/ui/form';
 import dxSelectBox from 'devextreme/ui/select_box';
 import notify from 'devextreme/ui/notify';
 import {
@@ -9,9 +9,9 @@ import {
 
 @Component({
   selector: 'app-root',
+  imports: [DxSelectBoxModule, DxFormModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  standalone: false,
   providers: [Service],
 })
 export class AppComponent {
