@@ -64,7 +64,7 @@ function fieldDataChanged(e: DxFormTypes.FieldDataChangedEvent) {
             :data-source="states"
             value-expr="ID"
             display-expr="Name"
-            @valueChanged="stateValueChanged"
+            @value-changed="stateValueChanged"
           />
         </div>
       </div>
