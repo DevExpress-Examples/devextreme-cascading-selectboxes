@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { DxSelectBoxModule, DxSelectBoxComponent, DxSelectBoxTypes } from 'devextreme-angular/ui/select-box';
 import { DxFormModule, DxFormTypes } from 'devextreme-angular/ui/form';
 import dxSelectBox from 'devextreme/ui/select_box';
@@ -12,6 +12,7 @@ import {
   imports: [DxSelectBoxModule, DxFormModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   providers: [Service],
 })
 export class AppComponent {
